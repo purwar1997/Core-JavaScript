@@ -19,3 +19,11 @@ let names = ['Aman', 'Paras', 'Shubham'];
 console.log(names.join(' & '));
 
 console.log(Array.from('JavaScript'));
+
+// fill()
+// syntax: array.fill(filler, start, end)
+// start and end args are optional
+
+let num = [12, 9, 7, 8, 67, 45];
+console.log(num.fill('empty', 2, 5));
+console.log(num.fill(null));

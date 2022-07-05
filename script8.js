@@ -70,3 +70,9 @@ console.log(user.indexOf('Hitesh'));
 
 user.push('Hitesh');
 console.log(user.indexOf('Hitesh'));
+
+console.log(user);
+
+user[user.indexOf(true)] = false;
+user[user.lastIndexOf(24)] = 25;
+console.log(user);
