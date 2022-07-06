@@ -41,3 +41,7 @@ console.log(arrays.every(arr => Array.isArray(arr)));
 
 arrays = [[12, 0], [2, 5, 6], [0]];
 console.log(arrays.every(item => Array.isArray(item)));
+
+numbers = [90, 4, 8, 10, 6];
+console.log(numbers.every(num => num % 2 === 0));
+console.log(numbers.some(num => num % 2 === 1));

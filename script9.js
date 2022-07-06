@@ -115,12 +115,13 @@ console.log(num2.flat());
 console.log(num2.flat(2));
 console.log(num2.flat(4));
 
-// to completely unnest an array, pass Infinity
+// to completely unnest an array or to remove all nestings, pass Infinity
 console.log(num2.flat(Infinity));
 
 let num3 = [1, [2, 3], [4, [5, [6, 7]]], [12, [90, [100]]]];
 
 console.log(num3.flat(2));
+console.log(num3.flat(3));
 console.log(num3.flat(Infinity));
 
 // concat() => used to merge two arrays
@@ -135,3 +136,15 @@ console.log(num4, num5);
 
 console.log(num4.concat(num6));
 console.log(num5.concat(num6).concat(['Purwar', 120]));
+
+// toString() => converts an array into a string
+// Syntax: arr.toString()
+
+let arr1 = [12, 89, 0, 23];
+console.log(arr1.toString());
+
+let arr2 = ['VIT', 100, 90.23, true, [true, false]];
+console.log(arr2.toString());
+
+let arr3 = ['shubham', 'purwar', 34];
+console.log(arr3.toString());
