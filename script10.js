@@ -50,6 +50,7 @@ console.log(
   Array.from(
     mySet2,
     function (lang, index) {
+      // this will refer to student2
       return `${this.name}, ${this.age} years old has learnt language ${index + 1}: ${lang}`;
     },
     student2

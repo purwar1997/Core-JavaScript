@@ -36,10 +36,12 @@ let user = ['Shubham', 'shubham05@dev.com', 24, true, ['BCA', 'MS']];
 // push() and unshift() adds elements to the end and start
 // shift() and unshift() causes other elements to shift inside an array
 
-user.pop();
+// pop() and shift() returns the deleted element
+
+console.log(user.pop());
 console.log(user);
 
-user.shift();
+console.log(user.shift());
 console.log(user);
 
 user.push('BCA');
