@@ -36,6 +36,6 @@ console.log(res);
 
 console.log(persons.some(person => (person.surname ? true : false)));
 
-const arrays = [[1, 2, 3], [4, 5, 6], [9, 10], [100]];
+const arrays = [[1, 2, 3], [4, 5, 6], [9, 10], [100], 'Array'];
 
 console.log(arrays.every(arr => Array.isArray(arr)));

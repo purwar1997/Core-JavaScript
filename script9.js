@@ -105,3 +105,18 @@ console.log(num);
 
 num.splice(0, 1);
 console.log(num);
+
+// flat() method => unnests a nested array
+let num2 = [1, [2, [3, [4, [5, [6, [7]]]]]]];
+
+console.log(num2.flat());
+console.log(num2.flat(2));
+console.log(num2.flat(4));
+
+// to completely unnest an array, pass Infinity
+console.log(num2.flat(Infinity));
+
+let num3 = [1, [2, 3], [4, [5, [6, 7]]], [12, [90, [100]]]];
+
+console.log(num3.flat(2));
+console.log(num3.flat(Infinity));

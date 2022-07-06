@@ -107,3 +107,17 @@ const userData = Array.from(
 );
 
 userData.forEach(data => console.log(data));
+
+// Array.isArray(item) checks whether the item is an array or not
+// returns either true or false
+
+console.log(Array.isArray(numbers));
+console.log(Array.isArray(users));
+
+let item = new Map([
+  [1, 2],
+  [3, 4, 5],
+  [10, 11],
+]);
+
+console.log(Array.isArray(item));
