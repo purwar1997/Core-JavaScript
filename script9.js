@@ -137,8 +137,9 @@ console.log(num4, num5);
 console.log(num4.concat(num6));
 console.log(num5.concat(num6).concat(['Purwar', 120]));
 
-// toString() => converts an array into a string
 // Syntax: arr.toString()
+// toString() => converts an array into a string
+// converts all the array values into strings first and then joins them by comma(,)
 
 let arr1 = [12, 89, 0, 23];
 console.log(arr1.toString());
@@ -146,5 +147,5 @@ console.log(arr1.toString());
 let arr2 = ['VIT', 100, 90.23, true, [true, false]];
 console.log(arr2.toString());
 
-let arr3 = ['shubham', 'purwar', 34];
+let arr3 = ['shubham', 'purwar', 34, 100, false];
 console.log(arr3.toString());
