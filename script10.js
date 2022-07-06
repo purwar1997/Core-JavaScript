@@ -121,3 +121,6 @@ let item = new Map([
 ]);
 
 console.log(Array.isArray(item));
+
+item = 100;
+console.log(Array.isArray(item));

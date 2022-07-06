@@ -4,7 +4,7 @@
 // returns either true or false
 // true if atleast one item satisfies the condition otherwise false
 
-let numbers = [121, 8, 4, 34, 50, -8];
+let numbers = [121, 8, 4, 34, 50];
 
 console.log(numbers.some(item => item % 3 === 0));
 console.log(numbers.some(item => item < 40));
@@ -36,6 +36,8 @@ console.log(res);
 
 console.log(persons.some(person => (person.surname ? true : false)));
 
-const arrays = [[1, 2, 3], [4, 5, 6], [9, 10], [100], 'Array'];
-
+let arrays = [[1, 2, 3], [4, 5, 6], [9, 10], [100], 'Array'];
 console.log(arrays.every(arr => Array.isArray(arr)));
+
+arrays = [[12, 0], [2, 5, 6], [0]];
+console.log(arrays.every(item => Array.isArray(item)));

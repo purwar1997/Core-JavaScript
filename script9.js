@@ -107,6 +107,8 @@ num.splice(0, 1);
 console.log(num);
 
 // flat() method => unnests a nested array
+// flat array doesn't have any nesting inside it
+
 let num2 = [1, [2, [3, [4, [5, [6, [7]]]]]]];
 
 console.log(num2.flat());
@@ -120,3 +122,16 @@ let num3 = [1, [2, 3], [4, [5, [6, 7]]], [12, [90, [100]]]];
 
 console.log(num3.flat(2));
 console.log(num3.flat(Infinity));
+
+// concat() => used to merge two arrays
+// Syntax: arr1.concat(arr2)
+
+let num4 = [23, 9],
+  num5 = [true, false, 'OOP'],
+  num6 = ['Shubham'];
+
+console.log(num4.concat(num5));
+console.log(num4, num5);
+
+console.log(num4.concat(num6));
+console.log(num5.concat(num6).concat(['Purwar', 120]));
