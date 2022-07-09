@@ -31,3 +31,5 @@ console.log(findToDo(myToDos, 'Clean ROOM'));
 // filter() returns an array
 const completedToDos = toDos => toDos.filter(todo => todo.isDone);
 console.log(completedToDos(myToDos));
+
+// callbacks inside find(), findIndex() anf filter() methods always returns a boolean value (true or false)
