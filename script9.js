@@ -18,7 +18,7 @@ console.log(`${numbers.join(' + ')} = ${numbers.reduce((sum, num) => sum + num, 
 let names = ['Aman', 'Paras', 'Shubham'];
 console.log(names.join(' & '));
 
-// fill()
+// fill() method
 // syntax: array.fill(filler, start, end)
 // start and end arguments are optional
 // modifies the original array and returns it

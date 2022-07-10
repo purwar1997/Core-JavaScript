@@ -44,4 +44,5 @@ console.log(arrays.every(item => Array.isArray(item)));
 
 numbers = [90, 4, 8, 10, 6];
 console.log(numbers.every(num => num % 2 === 0));
-console.log(numbers.some(num => num % 2 === 1));
+
+// callbacks inside some() and every() always return boolean value

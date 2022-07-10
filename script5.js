@@ -9,7 +9,6 @@ for (const site of sites) {
 }
 
 // for-in is mainly used for objects
-
 const user = {
   name: 'Shubham',
   age: 24,
@@ -22,7 +21,7 @@ for (const key in user) {
   console.log(`${key}: ${user[key]}`);
 }
 
-// for-in loop returns indices of an array
+// for-in loop returns indices of an array and string
 for (const index in sites) {
   console.log(`Index ${index}: ${sites[index]}`);
 }

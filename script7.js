@@ -38,8 +38,8 @@ console.log(user1.getCourseCount());
 // for-of loop only works on iterables. So it can't work on JS objects
 // for-in loop can work on JS objects
 
-// for-of => values
-// for-in => keys
+// for-of returns values
+// for-in returns keys
 
 for (const key in user1) {
   console.log(key);

@@ -14,7 +14,7 @@ const obj2 = Object.create({}, { a: { value: 200 }, b: { value: 10 }, c: { value
 const obj5 = new Object({ p: 1, q: 2, r: 3 });
 const obj6 = new Object({ name: 'Shubham', isOnline: true });
 
-// using Object.assign() method, properties can be added to an object
+// using Object.assign() method, multiple properties can be added to an object at once
 const obj3 = {};
 Object.assign(obj3, { a: 12, b: 45 }, { c: 123, d: 90, e: 12 }, { f: 11 });
 
@@ -59,7 +59,7 @@ const user = {
   },
 };
 
-// adding properties
+// adding properties to an object
 user.lastName = 'Purwar';
 user.college = 'IGNOU';
 user['degrees'] = ['BCA', 'MCA', 'MS']; // array inside an object
@@ -75,9 +75,10 @@ user.signup = function () {
 // accessing properties
 console.log(user.age);
 console.log(user.lastName);
-console.log(user['college']); // keys are always of string type
+console.log(user['college']); // keys are always of string datatype
 console.log(user['experience']);
 
+// . notation only accepts final property names
 // [] notation can accept variables and expressions
 let prop = 'degrees';
 console.log(user[prop]);

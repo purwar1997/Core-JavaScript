@@ -1,7 +1,6 @@
 'use strict';
 
 // try-catch-finally blocks
-
 const convertToRs = dollar => {
   if (typeof dollar === 'number') {
     return dollar * 65;
@@ -16,13 +15,13 @@ try {
 } catch (error) {
   console.log(error.message);
 } finally {
-  console.log('Will be executed anyway');
+  console.log('Will be executed anyway whether an error is thrown or not');
 }
 
 // maps in JS
-
 const myMap = new Map();
 
+// keys and values inside a map can be of any type
 myMap.set('name', 'shubham').set('age', 24).set(0, 'mother').set(true, 12);
 console.log(myMap);
 
@@ -37,18 +36,19 @@ console.log(myMap.entries());
 
 console.log(myMap.size);
 
+// has() returns either true or false
 console.log(myMap.has('name'));
 console.log(myMap.has(0));
 console.log(myMap.has(12));
 
-// delete() => removes only one property at a time
+// delete() => deletes only one property at a time
 myMap.delete(true);
 console.log(myMap);
 
 myMap.delete(0);
 console.log(myMap);
 
-// clear() => removes all the properties in one go to create an empty map
+// clear() => deletes all the properties at once to create an empty map
 myMap.clear();
 console.log(myMap);
 

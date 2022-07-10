@@ -4,8 +4,8 @@
 // converts iterables into an array
 
 // Syntax => Array.from(iterable, mapFn, thisArg) => returns an array
-// iterable =>  string, array, set, map
-// mapFn receives two args => element, index
+// iterable => string, array, set, map
+// mapFn is a callback which receives two args => element, index
 // this keyword inside mapFn will refer to thisArg
 
 // on strings
@@ -17,6 +17,7 @@ console.log(Array.from(numbers, num => num * 2));
 console.log(Array.from(numbers, (num, index) => `Item ${index + 1}: ${num}`));
 
 // on sets
+// elements are not repeated inside sets
 let mySet1 = new Set(['C', 'C++', 'Assembly', 'C', 'C++']);
 console.log(mySet1);
 
@@ -76,7 +77,7 @@ console.log(
       [1, 'A'],
       [2, 'B'],
       [3, 'C'],
-    ]).values()
+    ]).values() // returns an array of values
   )
 );
 
@@ -86,7 +87,7 @@ console.log(
       [1, 'A'],
       [2, 'B'],
       [3, 'C'],
-    ]).keys()
+    ]).keys() // returns an array of keys
   )
 );
 

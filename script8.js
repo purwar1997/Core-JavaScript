@@ -34,8 +34,10 @@ let user = ['Shubham', 'shubham05@dev.com', 24, true, ['BCA', 'MS']];
 
 // pop() and shift() removes elements from the end and start
 // push() and unshift() adds elements to the end and start
-// shift() and unshift() causes other elements to shift inside an array
+// shift() and unshift() causes other elements to shift left and right inside an array
+// so they slow down execution of JS program
 
+// push() and unshift() returns the size of updated array
 // pop() and shift() returns the deleted element
 
 console.log(user.pop());
@@ -57,16 +59,16 @@ console.log(user.reverse());
 console.log(user.reverse());
 
 // returns index if the element is found
-console.log(user.indexOf(true));
+console.log(user.indexOf(true)); // first occurence
 console.log(user.indexOf('BCA'));
 
 user.push(true);
-console.log(user.lastIndexOf(true));
+console.log(user.lastIndexOf(true)); // last occurence
 
 user.push(24);
 console.log(user.lastIndexOf(24));
 
-// returns -1 if an element is not found
+// returns -1 if the element is not found
 console.log(user.indexOf(100));
 console.log(user.indexOf('Hitesh'));
 

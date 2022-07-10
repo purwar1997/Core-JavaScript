@@ -18,6 +18,8 @@ console.log(findToDo(myToDos, 'Build an APP'));
 console.log(findToDo(myToDos, 'Build webapp')); // -1 if the item is not found
 
 // find() returns the found item itself
+// otherwise undefined if the item is not found
+
 findToDo = (toDoList, title) => {
   const toDoItem = toDoList.find(toDo => toDo.title.toLowerCase() === title.toLowerCase());
   return toDoItem ? toDoItem : 'Todo not found';
@@ -32,4 +34,4 @@ console.log(findToDo(myToDos, 'Clean ROOM'));
 const completedToDos = toDos => toDos.filter(todo => todo.isDone);
 console.log(completedToDos(myToDos));
 
-// callbacks inside find(), findIndex() anf filter() methods always returns a boolean value (true or false)
+// callbacks inside find(), findIndex() and filter() methods always return a boolean value (true or false)
