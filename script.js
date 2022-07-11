@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 const aboutUser = {
-  name: "Shubham",
+  name: 'Shubham',
   age: 24,
   isEmployed: false,
 
@@ -12,13 +12,14 @@ const aboutUser = {
   // inside function expressions, this keyword refers to the current object i.e. aboutUser
   summary: function () {
     console.log(this);
-    return `${this.name} is ${this.age} years old and currently ${this.isEmployed ? "" : "not"} employed`;
+    return `${this.name} is ${this.age} years old and currently ${this.isEmployed ? '' : 'not'} employed`;
   },
 
   // inside arrow functions, this keyword refers to the global window or node object
+  // can't access methods and properties using this
   summary2: () => {
     console.log(this);
-    return `${this.name} is ${this.age} years old and currently ${this.isEmployed ? "" : "not"} employed`;
+    return `${this.name} is ${this.age} years old and currently ${this.isEmployed ? '' : 'not'} employed`;
   },
 };
 
@@ -45,22 +46,22 @@ numbers.pop();
 console.log(numbers);
 
 const aboutMe = {
-  name: "shubham",
+  name: 'shubham',
   age: 24,
   isMarried: false,
 };
 
 // modifying const object
 
-aboutMe.degree = ["BCA", "MCA"];
+aboutMe.degree = ['BCA', 'MCA'];
 aboutMe.parents = {
-  mother: "sangeeta",
+  mother: 'sangeeta',
 };
 
 console.log(aboutMe);
 
-aboutMe.degree.push("MS");
-aboutMe.parents.father = "sandeep";
+aboutMe.degree.push('MS');
+aboutMe.parents.father = 'sandeep';
 
 console.log(aboutMe);
 
@@ -71,6 +72,7 @@ aboutMe.summary = function () {
 aboutMe.summary();
 
 // when a new value is reassigned to a const array or object, reference is modified
+// hence JS will throw type error
 
 // reassignment to an array
 numbers = [200, 0, 90];
@@ -78,7 +80,7 @@ console.log(numbers);
 
 // reassignment to an object
 aboutMe = {
-  hobbies: ["reading", "swimming"],
+  hobbies: ['reading', 'swimming'],
 };
 
 console.log(aboutMe);
